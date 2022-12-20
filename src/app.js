@@ -6,6 +6,7 @@ const {DisTube} = require('distube');
 const interactionCreate = require('./events/interactionCreate');
 const commandHandler = require('./handlers/commandHandler');
 const ready = require('./events/ready');
+const keepAlive = require('./server');
 
 const { TOKEN } = process.env
 
@@ -29,3 +30,4 @@ interactionCreate(client);
 
 ready(client);
 client.login(TOKEN);
+keepAlive();
