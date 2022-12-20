@@ -6,16 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon node src/app.js",
-    "deploy-cmd": "node src/deploy-commands.js"
+    "dcmd": "node src/deploy-commands.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.14.0",
     "discord.js": "^14.7.1",
     "distube": "^4.0.4",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "ffmpeg-static": "^4.4.1",
+    "libsodium-wrappers": "^0.7.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
